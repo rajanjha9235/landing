@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+h1 , h3{
+    font-weight: bold;
+}
+
+header {
+    /* To make header stick while scrolling and its position from top is 0px */
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+#navbar {
+    display: flex;
+    background-color: #4a28f2;
+    align-items: center;
+}
+
+#logo {
+    padding: 4px 21px;
+}
+
+#logo img {
+    height: 65px;
+    width: 65px;
+    border-radius: 34px;
+    box-shadow: 0px 0px 11px 0px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 91px;
+}
+
+.nav ul li {
+    margin: 1px 25px;
+}
+
+.nav a {
+    padding: 4px 15px;
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    font-size: 1.3rem;
+}
+
+.nav a:hover {
+    background-color: #2a04e1;
+    border-radius: 11px;
+}
+
+
+#main::before {
+    content: " ";
+    background: url('bg1.jpg');
+    background-blend-mode: darken;
+    position: absolute;
+    height: 427px;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 427px;
+    color: white;
+}
+
+#main div {
+    width: 60%;
+}
+
+#main h1 {
+    margin-bottom: 21px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#main p{
+    font-size: 1.2rem;
+}
+
+#ad {
+    display: flex;
+    background-color: #ece1fd;
+}
+
+.ad {
+    height: 150px;
+    width: 423px;
+    margin-left: 21px;
+    padding: 1px 11px;
+    align-items: center;
+
+    box-shadow: 0px 0px 11px 2px #4a28f2;
+    margin: 21px;
+
+    display: grid;
+    grid-template-areas:
+        'img h3 h3 h3 h3 h3'
+        'img p p p p p ';
+}
+
+.ad img {
+    height: 100px;
+    width: 100px;
+    border-radius: 61px;
+    grid-area: img;
+}
+
+.ad h3 {
+    grid-area: h3;
+    position: relative;
+    top: 17px;
+    font-size: 1.4rem;
+}
+
+.ad p {
+    grid-area: p;
+}
+
+#about {
+    height: 461px;
+    padding: 11px 21px;
+    background-color: #ece1fd;
+
+    display: grid;
+    grid-template-areas:
+        'heading heading heading photo photo'
+        'heading3 heading3 heading3 photo photo'
+        'para para para photo photo';
+
+}
+
+#about img {
+    height: 341px;
+    width: 461px;
+    margin: 11px;
+    box-shadow: 0px 0px 11px 2px #4a28f2;
+    grid-area: photo;
+}
+
+
+#about h1 {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    grid-area: heading;
+    font-size: 2.3rem;
+}
+
+#about h3 {
+    grid-area: heading3;
+    font-size: 1.4rem;
+}
+
+#about p {
+    grid-area: para;
+    position: relative;
+    top: -44px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    padding: 1px 11px;
+    border-radius: 31px;
+    border-style: none;
+    background-color: #4a28f2;
+    cursor: pointer;
+    color: white;
+}
+.btn:hover{
+	background-color : #2000ff;
+}
+
+#about button {
+    position: relative;
+    bottom: 101px;
+}
+
+
+#services {
+    height: 400px;
+    background-color: #fbdbfd;
+}
+
+#services h1 {
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 41px;
+    font-size: 2.2rem;
+}
+
+#services img {
+    height: 200px;
+    width: 320px;
+    box-shadow: 0px 0px 11px 2px #4a28f2;
+
+    grid-area: image;
+}
+
+#services button {
+    grid-area: button;
+    margin-top: 21px;
+    height: 42px;
+    width: 97px;
+
+    position: relative;
+    left: 99px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        'image'
+        'button';
+
+    /* To separate the services images  */
+    margin: 2px 41px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

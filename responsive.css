@@ -1,0 +1,96 @@
+@media only screen and (max-width : 428px) {
+
+    .nav .block{
+        display: none;
+    }
+    .nav ul{
+        margin: 0px;
+    }
+    .nav ul li{
+        margin: 0px;
+    }
+    .nav a:hover {
+        background-color: #2a04e1;
+        border-radius: 11px;
+    }
+
+    #logo{
+        padding: 4px 16px;
+    }
+    #logo img{
+        height: 51px;
+        width: 51px;
+    }
+
+
+
+    #main div{
+        width: 100%;
+    }
+    #main p{
+        margin: 0px 11px;
+    }
+    #ad {
+        flex-wrap: wrap;
+    }
+
+
+
+
+    #about {
+        height: 861px;
+        padding: 2px 11px;
+
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    #about h1 {
+        max-width: 428px;
+        margin-bottom: 61px;
+    }
+
+    #about h3 {
+        max-width: 428px;
+        margin-bottom: 61px;
+    }
+
+    #about p {
+        max-width: 428px;
+        margin-bottom: 61px;
+
+    }
+
+    #about img {
+        max-width: 355px;
+        height: 265px;
+        position: relative;
+        top: -102px;
+        margin-bottom: 21px;
+    }
+
+    #about button {
+        position: relative;
+        bottom: 77px;
+        height: 33px;
+        margin-bottom: 61px;
+
+    }
+
+
+
+
+    #services{
+        height: 933px;
+    }
+    #services button{
+        margin-top: 11px;
+    }
+    .services {
+        flex-wrap: wrap;
+    }
+    .grid{
+        margin-bottom: 21px;
+    }
+}
